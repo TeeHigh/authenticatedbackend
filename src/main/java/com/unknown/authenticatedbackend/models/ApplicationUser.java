@@ -25,7 +25,7 @@ public class ApplicationUser implements UserDetails{
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    @Column(name="use_id")
+    @Column(unique=true)
 
     private Integer userId;
 
